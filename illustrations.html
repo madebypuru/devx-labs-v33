@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>What we build · illustrations</title>
+<style>
+:root { --ink: #14162e; --t2: rgba(20,22,46,.62); --line: rgba(20,22,46,.09); --paper: #fff; }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.45 "Inter Display", Inter, system-ui, sans-serif; }
+main { max-width: 1200px; margin: 0 auto; padding: 56px 16px 80px; }
+h1 { font: 400 40px/1.1 "Cooper Lt BT", Georgia, serif; margin: 0 0 8px; letter-spacing: -.01em; }
+.lead { color: var(--t2); margin: 0 0 40px; max-width: 640px; }
+.grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px 24px; }
+figure { margin: 0; }
+figure.wide { grid-column: span 2; }
+img { display: block; width: 100%; height: auto; border-radius: 12px; }
+figcaption { margin-top: 14px; display: grid; gap: 2px; }
+figcaption b { font-weight: 600; font-size: 17px; }
+figcaption span { color: var(--t2); }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } figure.wide { grid-column: auto; } h1 { font-size: 32px; } }
+</style></head>
+<body><main>
+<h1>Six pieces, one platform.</h1>
+<p class="lead">The What we build illustrations for review, as they sit on the Platform Engineering page. Each one plays its own short loop.</p>
+<div class="grid">
+  <figure class="wide"><img src="assets/v33/pieces/gw.svg" alt="" width="772" height="300">
+    <figcaption><b>AI Gateway and Model Routing</b><span>One door for every model.</span></figcaption></figure>
+  <figure class=""><img src="assets/v33/pieces/lz.svg" alt="" width="372" height="300">
+    <figcaption><b>AI Landing Zone</b><span>The secure ground floor for every AI workload.</span></figcaption></figure>
+  <figure class=""><img src="assets/v33/pieces/ops.svg" alt="" width="372" height="300">
+    <figcaption><b>LLMOps and MLOps Pipelines</b><span>Ship models and prompts the way you ship software.</span></figcaption></figure>
+  <figure class=""><img src="assets/v33/pieces/inf.svg" alt="" width="372" height="300">
+    <figcaption><b>Inference Engineering</b><span>Fast enough for the use case, cheap enough for the P&amp;L.</span></figcaption></figure>
+  <figure class=""><img src="assets/v33/pieces/fin.svg" alt="" width="372" height="300">
+    <figcaption><b>AI FinOps and Observability</b><span>Know what every answer costs.</span></figcaption></figure>
+  <figure class="wide"><img src="assets/v33/pieces/dev.svg" alt="" width="772" height="300">
+    <figcaption><b>AI Developer Platform</b><span>Golden paths, so teams build fast without rebuilding the stack.</span></figcaption></figure>
+</div>
+</main></body></html>

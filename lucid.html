@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lucid style · sample</title>
+<style>
+:root { --ink: #14162e; --t2: rgba(20,22,46,.62); }
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: var(--ink); font: 15px/1.45 "Inter Display", Inter, system-ui, sans-serif; }
+main { max-width: 1200px; margin: 0 auto; padding: 56px 16px 80px; }
+h1 { font: 400 40px/1.1 "Cooper Lt BT", Georgia, serif; margin: 0 0 8px; letter-spacing: -.01em; }
+.lead { color: var(--t2); margin: 0 0 40px; max-width: 680px; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; }
+figure { margin: 0; }
+img { display: block; width: 100%; height: auto; border-radius: 12px; }
+figcaption { margin-top: 12px; display: grid; gap: 2px; }
+figcaption b { font-weight: 600; font-size: 17px; }
+figcaption span { color: var(--t2); }
+@media (max-width: 860px) { .grid { grid-template-columns: minmax(0, 1fr); } h1 { font-size: 32px; } }
+</style></head>
+<body><main>
+<h1>Lucid style sample.</h1>
+<p class="lead">The style frame from Figma (634:138) beside its rebuild as an animated illustration, made from the frame's own vectors. In the loop, a call runs along the beam into the ring, the ring lights, light rises up the stack and the $ glints.</p>
+<div class="grid">
+  <figure><img src="assets/v33/lucid/figma-634-138.png" alt="The Figma style frame: an isometric glass coin stack with a dollar sign on a glowing ring, with glass tiles beside it." width="844" height="608"><figcaption><b>Figma</b><span>634:138, static</span></figcaption></figure>
+  <figure><img src="assets/v33/lucid/lucid.svg" alt="The same illustration rebuilt as an animated SVG." width="422" height="304"><figcaption><b>Rebuilt</b><span>Animated SVG, 12 KB, no JavaScript. Glass, glows and light rebuilt from the frame's own layer settings</span></figcaption></figure>
+</div>
+</main></body></html>
